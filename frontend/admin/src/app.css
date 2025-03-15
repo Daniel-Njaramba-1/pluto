@@ -1,0 +1,71 @@
+@import 'tailwindcss';
+:root {
+    /* Base colors */
+    --primary-color: #B9D3E0;     /* Soft blue */
+    --primary-light: #d1e3ec;     /* Lighter blue - added */
+    --primary-dark: #a6bdca;      /* Darker blue - added */
+    
+    --secondary-color: #DCA1A1;   /* Dusty Rose */
+    --secondary-light: #e6b8b8;   /* Lighter rose - added */
+    --secondary-dark: #c48f8f;    /* Darker rose - added */
+    
+    --tertiary-color: #FA5053;    /* Strawberry */
+    --tertiary-light: #fb7476;    /* Lighter strawberry - added */
+    --tertiary-dark: #e0474a;     /* Darker strawberry - added */
+
+    /* Neutrals */
+    --neutral-50: #F8F9FA;        /* Nearly white */
+    --neutral-100: #F1F3F5;       /* Very light gray */
+    --neutral-200: #E9ECEF;       /* Light gray */
+    --neutral-300: #DEE2E6;       /* Soft gray */
+    --neutral-400: #CED4DA;       /* Medium gray */
+    --neutral-500: #ADB5BD;       /* Gray */
+    --neutral-600: #6C757D;       /* Dark gray */
+    --neutral-700: #495057;       /* Darker gray */
+    --neutral-800: #343A40;       /* Very dark gray */
+    --neutral-900: #212529;       /* Nearly black */
+    
+    /* Accent colors */
+    --accent-success: #8BBBA8;    /* Soft green */
+    --accent-success-light: #A9D0C2;
+    --accent-warning: #E6B89C;    /* Soft peach */
+    --accent-warning-light: #F0CDBB;
+    --accent-danger: #E07A7A;     /* Soft red */
+    --accent-danger-light: #EBA0A0;
+    --accent-info: #A4B8F9;       /* Soft purple */
+    --accent-info-light: #C3D0FB;
+    
+    /* Typography */
+    --font-family: 'Inter', sans-serif;
+    --text-primary: var(--neutral-800);
+    --text-secondary: var(--neutral-600);
+    --text-tertiary: var(--neutral-500);
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+body {
+    font-family: var(--font-family);
+    color: var(--text-primary);
+    background-color: var(--neutral-50);
+}
+
+/* Utility classes for colors */
+.bg-primary { background-color: var(--primary-color); }
+.bg-primary-light { background-color: var(--primary-light); }
+.bg-primary-dark { background-color: var(--primary-dark); }
+
+.bg-secondary { background-color: var(--secondary-color); }
+.bg-secondary-light { background-color: var(--secondary-light); }
+.bg-secondary-dark { background-color: var(--secondary-dark); }
+
+.bg-tertiary { background-color: var(--tertiary-color); }
+.bg-tertiary-light { background-color: var(--tertiary-light); }
+.bg-tertiary-dark { background-color: var(--tertiary-dark); }
+
+.text-primary { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-tertiary { color: var(--text-tertiary); }
